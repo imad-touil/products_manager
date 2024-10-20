@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+    <!-- <meta http-equiv="refresh" content="1"> -->
+    <title>{{title}}</title>
+    <link rel="icon" href="{{url_for('static', filename='images/icon.png')}}">
+</head>
+<body onload="updateTime()">
+
+    <!-- css code for spacific page -->
+    {% if custom_css %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/' + custom_css + '.css')}}">
+    {% endif %}
+
+    <!-- html code for each page -->
+    {% block body %}
+    {% endblock %}
+
+    <!-- script for all pages -->
+    <script src="{{url_for('static', filename='js/script.js')}}"></script>
+</body>
+</html>

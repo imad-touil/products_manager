@@ -1,0 +1,77 @@
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: #EEE;
+}
+
+.container .slide-one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    height: 100vh;
+    background-color: lightblue;
+}
+
+.container .slide-one .product-area,
+.container .slide-one .customers-area,
+.container .slide-one .sales-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.container .slide-one .product-area {
+    background-color: #72BF78;
+}
+
+.container .slide-one .customers-area {
+    background-color: #A0D683;
+}
+
+.container .slide-one .sales-area {
+    background-color: #D3EE98;
+}
+
+.container .slide-two {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100vh;
+}
+
+.container .slide-two .time-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    direction: ltr;
+    font-size: 50px;
+
+    width: 100%;
+    height: 10%;
+    background-color: #C1E2A4;
+}
+
+.container .slide-two .operations-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+    background-color: azure;
+}
+
+.container .slide-two .reports-area {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+
+}

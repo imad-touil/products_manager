@@ -1,0 +1,11 @@
+* {
+    box-sizing: border-box;
+    direction: rtl;
+}
+
+body {
+    background-color: #EEE;
+    margin: 0 2px;
+    padding: 0;
+    height: 100%;
+}
